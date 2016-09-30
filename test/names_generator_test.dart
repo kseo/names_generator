@@ -5,15 +5,16 @@ import 'package:names_generator/names_generator.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    Awesome awesome;
-
-    setUp(() {
-      awesome = new Awesome();
+  group('names_generator tests', () {
+    test('NameFormat', () {
+      final name = getRandomName(0);
+      expect(name, contains('_'));
+      expect(name.contains(new RegExp(r'[0-9]')), isFalse);
     });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+    test('NameRetries', () {
+      final name = getRandomName(1);
+      expect(name, contains('_'));
+      expect(name.contains(new RegExp(r'[0-9]')), isTrue);
     });
   });
 }

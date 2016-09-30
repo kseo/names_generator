@@ -4,6 +4,6 @@
 import 'package:names_generator/names_generator.dart';
 
 main() {
-  var awesome = new Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  final name = getRandomName(1);
+  print(name); // backstabbing_snyder9
 }
