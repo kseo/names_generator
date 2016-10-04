@@ -1,5 +1,7 @@
 # names_generator
 
+[![Build Status](https://travis-ci.org/kseo/names_generator.svg?branch=master)](https://travis-ci.org/kseo/names_generator)
+
 Docker's namesgenerator in Dart.
 
 `getRandomName` generates a random name from the list of adjectives and surnames in this package
